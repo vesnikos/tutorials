@@ -43,6 +43,7 @@ print(response.status_code)
 
 1. [requests-intro](./notebooks/requests-intro.ipynb)
 1. [requests-status-codes](./notebooks/status-codes.ipynb)
-1. [requests-json](./notebooks/requests-json.ipynb)
+1. [requests-content](./notebooks/requests-content.ipynb)
+1. [requests-parameters](./notebooks/requests-parameters.ipynb)
 1. [requests-async](./notebooks/requests-async.ipynb)
 
