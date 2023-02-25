@@ -1,7 +1,27 @@
 ## About
 
+In this tutorial we will speak about how we can use `BeautifulSoup` to extract data from the a webside. The learning objectives are:
+ - to understand what is the DOM (Document Object Model)
+ - to understand how to use `BeautifulSoup` to parse the DOM
+ - to understand how to navigate through the DOM
+ - to understand how to search through the DOM
+ - to understand how to extract data from the DOM
+
+### Preqrequiments
+All the necessary libraries are listed in the `requirements.txt` file. You can install them by running the following command:
+
+```bash
+pip install -r requirements.txt
+```
+of if you are using `poetry`:
+```bash
+poetry install --no-root --only=main
+```
+
+
 #### The DOM (Document Object Model)
-We are all familiar with the web and web pages. If you ever happened to open the source code of a web page, you would propably must have  something like this:
+We are all familiar with the web and web pages.  
+If you ever happened to open the source code of a web page, you would propably must have  something like this:
 
 ```html
     <html>
@@ -14,11 +34,10 @@ We are all familiar with the web and web pages. If you ever happened to open the
         </body>
     </html>
 ```
-### Preqrequiments
-If you have not installed the `beautifulsoup4` library, you can do so by running the following command in your terminal:
-```bash
-pip install beautifulsoup4
-```
+
+That is the source of a very simple web page. In fact if you copy and paste the test into a text editor and save it as `index.html` and open it in a browser, it will render a very small web page.
+
+> Note: The html-string are instructions for the browser on how to build the page. It contains instructions on where to put all the elements (text, buttons, images, everything) that compose a web page, along with their style. 
 
 ### The HTML
 The above text, is the source code of a web page. It is written in a markup language called HTML (HyperText Markup Language), which is very similar to `XML` (xml stands for eXtensible Markup Language). Which like json, is designed to store and transport data. The difference between `XML` and `HTML` is that `XML` is designed to transport and store data, while `HTML` is designed to display data in a web browser.
@@ -58,4 +77,4 @@ Chapters:
  - [Navigating the DOM](./notebooks/navigating-the-dom.ipynb) 
  - [Searching the DOM](./notebooks/searching-the-dom.ipynb)
  - [Extracting data from the DOM](./notebooks/extracting-data-from-the-dom.ipynb)
- - [A complete example](./notebooks/a-complete-example.ipynb)
+ - [Scrapping billboard200](./notebooks/billboard200.ipynb)
