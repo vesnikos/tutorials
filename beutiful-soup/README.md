@@ -1,10 +1,12 @@
-# The DOM (Document Object Model)
+## About
+
+#### The DOM (Document Object Model)
 We are all familiar with the web and web pages. If you ever happened to open the source code of a web page, you would propably must have  something like this:
 
 ```html
     <html>
         <head>
-            <title>Title of webpage</title>
+            <title>Title of webpage</title>gh repo clone vesnikos/tutorials
         </head>
         <body>
             <h1>My first web page</h1>
